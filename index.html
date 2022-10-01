@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Convert audio to text and download file</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Convert audio to text and download file</h1>
+        <div class="content">
+            <div class="languages-container">
+                <h2>Select de language do you need speak, read and listen...</h2>
+                <select name="languages" id="languages">
+                    <option value="spanish">Spanish</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="italian">Italian</option>
+                    <option value="german">German</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button class="button" id="start">🟢 Start recording</button>
+                <button class="button" id="stop">🟥 Stop recording</button>
+                <button class="button" id="play">🎵 Play text</button>
+                <button class="button" id="delete">❗ Delete text</button>
+            </div>
+        
+            <textarea id="text"></textarea>
+
+            <div class="file-container">
+                <input placeholder="Specify a filename" id="filename">
+                <button id="download">Download file</button>
+            </div>
+
+            <div class="file-type">
+                <input id="pdf" class="radio-button" type="radio" value="pdf" name="radio-button">pdf</input>
+                <input id="docx" class="radio-button" type="radio" value="docx" name="radio-button">docx</input>
+                <input id="txt" class="radio-button" type="radio" value="txt" name="radio-button">txt</input>
+                <input id="js" class="radio-button" type="radio" value="js" name="radio-button">js</input>
+                <input id="css" class="radio-button" type="radio" value="css" name="radio-button">css</input>
+                <input id="html" class="radio-button" type="radio" value="html" name="radio-button">html</input>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
